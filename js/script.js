@@ -1,5 +1,11 @@
 'use strict'
 
+function numero(num) {
+  let arr = []
+  arr[0] = num
+  console.log(arr)
+}
+
 function votar() {
   let num1 = String(document.getElementById('num1').value)
   let num2 = String(document.getElementById('num2').value)
@@ -12,7 +18,7 @@ function votar() {
     artur()
   } else if (Number(voto) == 30) {
     mamae()
-  } else
+  }
 
 }
 
