@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.urna-box {
+  background-color: rgb(227, 227, 227);
+  padding: 1.7rem;
+  padding-bottom: 2.8rem;
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.left-side {
+  width: auto;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid black;
+}
+
+.expli {
+  width: 100%;
+  border-top: 5px solid black;
+  margin-top: 1.8rem;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.tittle-expli {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.text-expli {
+  margin-left: 2rem;
+  margin-top: .2rem;
+}
+
+.img-box {
+  display: flex;
+  gap: 7rem;
+}
+
+.left-mini-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.blank-img {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.img-box-tittle {
+  font-size: 1rem;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.text-ocupacao {
+  text-align: center;
+  margin-left: 5rem;
+  margin-bottom: .6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.input-box {
+  display: flex;
+}
+
+.input {
+  width: 40px;
+  padding: 5px;
+  font-size: 1.5rem;
+  height: 45px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.text {
+  width: 80px;
+}
+
+.img-mini-box {
+  width: 160px;
+  height: 180px;
+  background-color: green;
+}
+
+.numbers-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: .5rem;
+}
+
+#btn-zero {
+  display: grid;
+  grid-column-start: 2;
+}
+
+.btn-number {
+  width: 60px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.buttons-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: .6rem;
+}
+
+.btn-action {
+  width: 130px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+}
+
+#confirmar {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.right-side {
+  width: 400px;
+  background-color: rgb(75, 75, 75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
