@@ -6,26 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/script.js"></script>
   <title>Urna do Magrelão</title>
 </head>
 
-<body>
+<body onload="votar()">
 
   <div class="urna-box">
 
     <div class="left-side">
-      <div class="img-box">
+      <div class="inputs-visibles">
+        <div class="input-box-visible">
+          <h3 class="tittle-visible">Presidente(a)</h3>
+          <div class="input-mini-box">
+            <input type="text" class="input" id="num1" maxlength="1">
+            <input type="text" class="input" id="num2" maxlength="1" onblur="votar()">
+          </div>
+        </div>
+      </div>
+      <div class="img-box hide">
         <div class="left-mini-box">
           <h1 class="img-box-tittle">Seu voto para</h1>
 
-          <p class="text-ocupacao">Prefeito</p>
+          <p class="text-ocupacao">Presidente(a)</p>
 
           <div class="blank-img">
             <p class="text text-number">Número</p>
             <div class="input-box">
-              <input type="text" name="number-one" id="input-one" class="input" id="first-number" maxlength="1">
-              <input type="text" name="number-two" id="input-two" class="input" id="second-number" maxlength="1">
+              <div class="input back" id="input-one"></div>
+              <div class="input back" id="input-two"></div>
             </div>
 
           </div>
@@ -50,7 +58,7 @@
 
       </div>
 
-      <div class="expli">
+      <div class="expli hide">
         <h3 class="tittle-expli">Aperte a tecla para:</h3>
         <p class="text-expli">CONFIRMA para CONFIRMAR o seu voto</p>
         <p class="text-expli">CORRIGE para REINICIAR o seu voto</p>
@@ -61,7 +69,7 @@
     <div class="right-side">
       <div class="justica-eleitoral">
         <img src="../img/simbolo (1).png" alt="" class="eleitoral-img">
-        <h3 class="text-eleitoral">Justiça</br> é o meu Pau</h3>
+        <h3 class="text-eleitoral">Justiça</br>Eleitoral</h3>
       </div>
       <div class="separator">
         <div class="numbers-box">
@@ -79,7 +87,7 @@
         <div class="buttons-box">
           <button class="btn-action" id="branco">Branco</button>
           <button class="btn-action" id="corrige">Corrige</button>
-          <button class="btn-action" id="confirmar">Confirma</button>
+          <button class="btn-action" id="confirmar" onclick="votar()">Confirma</button>
         </div>
       </div>
 
@@ -88,5 +96,6 @@
   </div>
 
 </body>
+<script src="../js/script.js"></script>
 
 </html>
